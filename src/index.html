@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Oi Desafio</title>
+    <link rel="icon" href="images/oi-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="scss/style.min.css">
+    <link rel="stylesheet" href="owlcarouselv2-2.3.4/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarouselv2-2.3.4/owl.theme.default.min.css">
+
+    <script src="js/jquery-v3.3.1.min.js"></script>
+    <script src="owlcarouselv2-2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav--main-logo">
+            <img src="images/oi-logo.png" alt="">
+        </div>
+        <div class="nav--main__select">
+            <select name="" id="">
+                <option value="Todos">Todos</option>
+                <option value="RJ">Rio de Janeiro, RJ</option>
+                <option value="SP">São Paulo, SP</option>
+            </select>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="challenge">
+            <h1>DESAFIO <wbr>E-COMMERCE</h1>
+            <div class="offer" >
+                <h2>Todas as nossas ofertas:</h2>
+                <div class="main--carousel owl-carousel owl-theme">
+                    <!--Start-Carousel-Item-->
+                    <div class="main--carousel-items item">
+                        <h2 id="produtos">Plano</h2>
+                        <h3>8 GB</h3>
+                        <p>Apps com <span>internet ilimitada:</span></p>
+                        <div>isencao</div>
+                        <p><span>Conteúdo digital</span> em video:</p>
+                        <div>beneficio digital</div>
+                        <p>Adcione dependentes</p>
+                        <p class="dependencies--price">por mais R$ 8.00 cada</p>
+                        <div class="offer--price">
+                            <p>
+                                R$ <span>80<sup>,90</sup><sub>/MÊS</sub></span>
+                            </p>
+                        </div>
+                        <div class="buy--cta">
+                            <a class="buy__a" href="">Eu quero</a>
+                        </div>
+                    </div><!--End-Carousel-Item-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="js/knockout-v3.4.2.js"> </script>
+    <script type="text/javascript">
+/* 
+    viewModel = () => {
+        const self = this;
+
+        self.customerList = ko.observableArray();
+
+        self.getList = () => {
+            $.ajax({
+                type: 'GET',   
+                url: 'https://desafio-oi.herokuapp.com/',
+            })
+
+            .done((res) => {
+
+            });
+        }
+    }
+
+    $(document).ready(() => {
+        ko.applyBindings( viewModel );
+    });
+  */
+    </script>
+    <script>
+        $(document).ready(() => {
+            $('.owl-carousel' ).owlCarousel({
+                autoWidth: true,
+                loop: false,
+                items: 8
+                })
+        });
+    </script>
+</body>
+</html>

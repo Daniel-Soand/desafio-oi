@@ -1,0 +1,162 @@
+/*=============
+    Global
+===============*/
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=K2D:300,400,700");
+@font-face {
+  font-family: simplonNormRegular;
+  src: url(../font/SimplonNorm-Regular-WebTrial.woff2);
+}
+@font-face {
+  font-family: simplonMonoRegular;
+  src: url(../font/SimplonMono-Regular-WebTrial.woff2);
+}
+/* Variaveis */
+/* STARTING CSS  */
+body {
+  font-family: "simplonNormRegular", sans-serif;
+}
+
+.transition {
+  transition: 1;
+}
+
+/*=============
+    Main Nav
+===============*/
+nav {
+  max-width: 90%;
+  margin: 0 auto;
+  display: relative;
+}
+nav .nav--main-logo img {
+  float: left;
+}
+nav .nav--main__select {
+  max-width: 980px;
+  text-align: right;
+}
+nav .nav--main__select select {
+  margin: 20px 0 0 50px;
+  border: none;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+@media (min-width: 981px) {
+  nav .nav--main__select {
+    text-align: left;
+  }
+}
+/*=============
+    Main Content
+===============*/
+.challenge {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.challenge h1 {
+  margin-top: 50px;
+  font-size: 2em;
+  white-space: nowrap;
+}
+.challenge span {
+  border-bottom: 1px solid #909090;
+}
+.challenge .offer {
+  margin-top: 50px;
+}
+.challenge .offer h2 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.challenge .offer .main--carousel .main--carousel-items {
+  text-align: center;
+  width: 250px;
+  margin: 0 0 20px 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.35);
+}
+.challenge .offer .main--carousel .main--carousel-items h2 {
+  padding-top: 12px;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #9f9f9f;
+}
+.challenge .offer .main--carousel .main--carousel-items h3 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "simplonMonoRegular", sans-serif;
+}
+.challenge .offer .main--carousel .main--carousel-items ul {
+  padding: 0;
+}
+.challenge .offer .main--carousel .main--carousel-items ul li {
+  list-style: none;
+  display: inline-block;
+}
+.challenge .offer .main--carousel .main--carousel-items p {
+  margin-bottom: 0;
+}
+.challenge .offer .main--carousel .main--carousel-items .dependencies--price {
+  margin: 0 0 25px;
+  color: #909090;
+  font-size: 0.9em;
+}
+.challenge .offer .main--carousel .main--carousel-items .offer--price {
+  position: relative;
+}
+.challenge .offer .main--carousel .main--carousel-items .offer--price p {
+  font-weight: 700;
+}
+.challenge .offer .main--carousel .main--carousel-items .offer--price span {
+  position: relative;
+  border: none;
+  font-size: 2em;
+  line-height: 0em;
+  font-family: "simplonMonoRegular", sans-serif !important;
+}
+.challenge .offer .main--carousel .main--carousel-items .offer--price sup {
+  margin-left: 2px;
+  font-size: 0.65em;
+}
+.challenge .offer .main--carousel .main--carousel-items .offer--price sub {
+  font-size: 0.35em;
+  bottom: 10px;
+  right: 4px;
+  position: absolute;
+}
+.challenge .offer .main--carousel .main--carousel-items .buy--cta {
+  padding: 25px 0 50px;
+}
+.challenge .offer .main--carousel .main--carousel-items .buy--cta a {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.challenge .offer .main--carousel .main--carousel-items .buy--cta a:hover {
+  background-color: #909090;
+}
+
+@media (min-width: 981px) {
+  .challenge .offer {
+    text-align: center;
+  }
+}
+/*=============
+    Main Footer
+===============*/
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
